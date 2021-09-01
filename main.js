@@ -65,6 +65,7 @@ function showCocktails(cocktails, search) {
 }
 
 function singleItem(id) {
+    // for smooth scrool up on clicks
     window.scrollTo(0, 40)
     cocktailDetails.textContent = '';
     const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`;
@@ -76,8 +77,9 @@ function singleItem(id) {
 
 function seeDetails(datas) {
     const div = document.createElement('div');
+    div.classList.add('row');
     div.innerHTML = `
-        <div id="img" class='w-25 mx-auto'>
+        <div class='col-md-3 mx-auto'>
             <img src="${datas.strDrinkThumb}" class="card-img-top" alt="${datas.strDrink}">
         </div>
     `;
