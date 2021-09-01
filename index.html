@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Coktail DB</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    /* Fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container my-4">
+    <!-- Input Box -->
+    <h1 class="text-center fw-bold">Search Your Drink</h1>
+    <div class="w-50 d-flex mx-auto">
+      <input type="text" class="form-control me-2" placeholder="Cocktail" id="searchInput" />
+      <button class="btn btn-dark" id="search-btn">Search</button>
+    </div>
+  </section>
+  <section class="container">
+    <!-- cocktail Details -->
+    <div class="row" id="cocktail-details">
+
+    </div>
+    <hr />
+  </section>
+  <section class="container mt-2">
+    <div id="error"></div>
+    <!-- cocktails -->
+    <!-- Spinner -->
+    <div class="text-center">
+      <div id="spinner" class="spinner-border d-none" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <div id="cocktail-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- Reapeating -->
+      <!-- <div class="col-md-3 col-12">
+        
+          <div class="rounded overflow-hidden border p-2">
+            <img
+              src="https://restcountries.eu/data/umi.svg"
+              class="w-100"
+              alt=""
+            />
+          </div>
+          
+          <div
+            class="
+              py-2
+              d-flex
+              justify-content-between
+              align-items-center
+              d-md-block
+              text-md-center
+            "
+          >
+            <h1>Bangladesh</h1>
+            <button class="btn btn-dark">Learn More</button>
+          </div>
+        </div> -->
+      <!-- Repeating -->
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>
